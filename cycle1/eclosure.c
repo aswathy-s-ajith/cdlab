@@ -38,6 +38,7 @@ void closure_find(int state, int start){
     }
 }
 
+
 int main(){
     int i, j, from, to;
     char c;

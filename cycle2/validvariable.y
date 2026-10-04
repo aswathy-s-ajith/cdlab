@@ -3,11 +3,14 @@ Lex.l
 #include "y.tab.h"
 %}
 
+
 %%
 [a-zA-Z][a-zA-Z0-9]*    { return VARIABLE; }
 \n                      { return '\n'; }
 .                       { return INVALID; }
 %%
+
+
 
 Yacc.y
 %{
